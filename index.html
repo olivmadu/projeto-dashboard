@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <div class="logo">
+        <h2>informações da empresa</h2>
+      </div>
+      <ul>
+        <li><a href="#">📊 visão geral</a></li>
+        <li><a href="#">🛒 pedidos</a></li>
+        <li><a href="#">📦 produtos</a></li>
+        <li><a href="#">📈 relatórios</a></li>
+        <li><a href="#">⚙️ configurações</a></li>
+      </ul>
+    </nav>
+
+    <!-- Área principal -->
+    <div class="main-content">
+      <header>
+        <h1>visão geral da empresa</h1>
+      </header>
+
+      <!-- Cards de informações -->
+      <section class="info-cards">
+        <div class="card">
+          <h3>receita</h3>
+          <p>R$ 120.000</p>
+        </div>
+        <div class="card">
+          <h3>pedidos</h3>
+          <p>1.200</p>
+        </div>
+        <div class="card">
+          <h3>itens vendidos</h3>
+          <p>3.400</p>
+        </div>
+      </section>
+
+      <!-- Gráficos -->
+      <section class="charts">
+        <div class="chart-container">
+          <h3>vendas ao longo do tempo</h3>
+          <canvas id="salesChart"></canvas>
+        </div>
+        <div class="chart-container">
+          <h3>ranking de vendas</h3>
+          <canvas id="rankingChart"></canvas>
+        </div>
+        <div class="chart-container">
+          <h3>atingimento de meta</h3>
+          <canvas id="meta-chart"></canvas>
+        </div>
+        <div class="chart-container">
+          <h3>localidade</h3>
+          <canvas id="cidade-chart"></canvas>
+        </div>
+      </section>
+      
+
+      <!-- Tabela de informações -->
+      <section class="data-table">
+        <h3>representatividade de vendas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>categoria</th>
+              <th>porcentagem</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>brinquedos</td>
+              <td>50%</td>
+            </tr>
+            <tr>
+              <td>jogos</td>
+              <td>30%</td>
+            </tr>
+            <tr>
+              <td>livros</td>
+              <td>20%</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
